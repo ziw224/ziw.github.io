@@ -12,8 +12,60 @@
   z-index: 10;
 }
 
+.home__avatars {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
 .home__img {
-  margin-bottom: 1.5rem;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 60% center;
+  border: 4px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;  /* Center the main image */
+}
+
+.home__img--second {
+  width: 300px;  /* Smaller size */
+  height: 300px;
+  object-position: center center;
+  position: absolute;  /* Position it absolutely */
+  top: 30px;  /* Distance from top */
+  left: -130px;  /* Move it further left, outside the main image */
+  border: 3px solid #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  animation: float 3s ease-in-out infinite;  /* Optional floating animation */
+}
+
+/* Optional: Add floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.home__buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.btn--cv {
+  background-color: #4a90e2;
+  border-color: #4a90e2;
+}
+
+.btn--cv:hover {
+  background-color: #357abd;
+  border-color: #357abd;
 }
 
 .home__name {
@@ -26,6 +78,7 @@
   display: flex;
   column-gap: 1.75rem;
   margin: 1.5rem 0;
+  justify-content: center; 
 }
 
 .home__social-link {
@@ -156,4 +209,30 @@
 .s11 {
   bottom: 10%;
   right: 2%;
+}
+
+.job-status {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.job-status__badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
 }

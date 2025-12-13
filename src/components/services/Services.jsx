@@ -3,6 +3,7 @@ import './Services.css';
 import Image1 from '../../assets/service-1.svg'
 import Image2 from '../../assets/service-2.svg'
 import Image3 from '../../assets/service-3.svg'
+import Image4 from '../../assets/service-4.png'
 
 const data = [
     {
@@ -21,11 +22,11 @@ const data = [
     },
     {
         id: 3,
-        image: Image3,
-        title: "Mobile Development",
+        image: Image4,
+        title: "AI Agent Workflows",
         description:
-            "Ensuring that a mobile app meets the correct standards, and also ensuring it's well maintained",
-    },
+            "Building intelligent AI agent pipelines with RAG (Retrieval-Augmented Generation) for context-aware applications and automated workflows",
+    }
 ];
 
 const Services = () => {
