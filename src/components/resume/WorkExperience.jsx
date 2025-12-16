@@ -1,64 +1,54 @@
 const WorkExperience = [
     {
         id: 1,
-        title: "Software Engineer",
-        company: "Kurtosys",
-        yearsActive: "January 2022 - Present",
+        title: "Founding AI & Full Stack Engineer",
+        company: "EcoForge",
+        location: "Boston, Massachusetts",
+        yearsActive: "December 2024 - Present",
         information: [
-            "Write modern, performant, maintainable code for a diverse array of internal projects",
-            "Communicate with multi-disciplinary teams of engineers, team leads, and QA Engineers on a daily basis",
+            "Architected full-stack AI-powered cement production platform serving enterprise manufacturing clients, securing ¥2M seed funding and trials with China's largest cement manufacturer",
+            "Built production-grade AI agent using LangChain and GPT-4o, orchestrating multi-tool workflows for RAG-based Q&A system and intelligent parameter recommendations with <2s query latency",
+            "Engineered high-performance backend with FastAPI, Redis, and WebSockets for real-time data streaming; developed responsive Next.js/TypeScript frontend visualizing 100+ daily production KPIs",
+            "Established robust CI/CD pipelines with automated testing for stochastic agentic tool-calling; containerized application with Docker and orchestrated deployments across three environments (test, production, and on-site factory servers), ensuring 24/7 system availability and reliable model versioning",
         ],
     },
     {
         id: 2,
-        title: "Junior Software Developer",
-        company: "Entrostat",
-        yearsActive: "May 2017 - December 2021",
+        title: "Research Assistant",
+        company: "LUNAR Lab, Brown University",
+        location: "Providence, Rhode Island",
+        yearsActive: "December 2024 - May 2025",
         information: [
-            "Improved and optimized the company's website for a seamless customer experience",
-            "Created, communicated, and managed project plans & project timelines",
-            "Worked to continually meet the expectation of our clients",
+            "Researched emergent properties of Video Large Language Models (Video LLMs) to improve ML pipeline explainability and performance optimization under Professor Ellie Pavlick",
+            "Developed and executed control experiments on EgoSchema to benchmark Image LLMs vs Video LLMs performance on long-form video question-answering tasks",
+            "Implemented AnyRes technique in multi-image scenarios, enabling LLaVA-NeXT-Image to process videos with fewer tokens using visual Chain-of-Thought for automated text infills",
+            {
+                text: "Co-authored research paper ",
+                link: {
+                    text: "'Video Finetuning Improves Reasoning Between Frames'",
+                    url: "https://arxiv.org/abs/2511.12868"
+                },
+                suffix: " accepted to NeurIPS 2025 CogInterp"
+            }
         ],
     },
     {
         id: 3,
-        title: "Junior Software Developer",
-        company: "Empire State",
-        yearsActive: "Feburary 2016 - April 2017",
+        title: "Oracle Sponsored Open-Source Developer",
+        location: "Remote",
+        company: "Oracle Central Bank Digital Currency Project",
+        yearsActive: "January 2023 - January 2024",
         information: [
-            "Planned, developed, tested, deployed, and maintained web applications and mobile applications",
-            "Worked well independently and on a team to solve problems."
-        ],
-    },
-    {
-        id: 4,
-        title: "Software Development Intern",
-        company: "The Digital Academy",
-        yearsActive: "Novembe 2015 - January 2016",
-        information: [
-            "Served as a dedicated and supportive Intern in a fast-paced environment",
-            "Worked to solve complex problems using the latest in Mobile and Web Technologies.",
-        ],
-    },
-    {
-        id: 5,
-        title: "IT Support Assistant",
-        company: "Varsity College",
-        yearsActive: "February 2015 - May 2015",
-        information: [
-            "Worked to support the senior support staff with day-to-day tasks.",
-            "Assisted with the evaluation and troubleshooting of hardware and software issues.",
-            "Maintaining computer Inventory & surplus equipment."
-        ],
-    },
-    {
-        id: 6,
-        title: "Student Ambassador",
-        company: "Varsity College",
-        yearsActive: "December 2014 - February 2015",
-        information: [
-            "Monitored registration for all prospective student",
-            "Assisted parents and prospective student with necessary registration details",
+            "Forked MIT and Boston Federal Reserve's OpenCBDC platform and researched 2-Phase Commit architecture for localized data storage and transaction flow",
+            "Developed and executed technical plan in coordination with Oracle's VP of Blockchain Technologies to port OpenCBDC's local storage to manually sharded Oracle Autonomous Database",
+            "Engineered React-based frontend interface to visualize UTXO transaction flows and developed administrative dashboard for benchmarking system throughput performance",
+            {
+                text: "Published Oracle Blog Post: ",
+                link: {
+                    text: "'Extending CBDC Scalability and Resilience with Oracle Database Blockchain Tables'",
+                    url: "https://blogs.oracle.com/blockchain/extending-cbdc-scalability-and-resilience-with-oracle-database-blockchain-tables"
+                }
+            },
         ],
     },
 ];

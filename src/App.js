@@ -29,7 +29,7 @@ function App() {
                 <About />
                 <Services />
                 <Resume />
-                <Portfolio />
+                {/* <Portfolio /> */}
                 {/* <Testimonials /> */}
                 <Blog />
                 <Contact theme={theme} />

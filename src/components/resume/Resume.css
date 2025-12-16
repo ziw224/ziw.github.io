@@ -2,90 +2,197 @@
   height: 100%;
   display: flex;
   position: relative;
+  gap: 2rem;
 }
 
 .tab__list {
-  width: 15rem;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .tab__panel {
   flex: 1;
   display: none;
-  padding: 1.5rem 2rem;
+  padding: 2.5rem;
   background-color: var(--container-color);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .tab__panel.is-active {
   display: block;
 }
 
+.tab__panel-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
 .tab__panel-list li {
   position: relative;
-  padding-left: 20px;
+  padding-left: 28px;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  transition: transform 0.2s ease;
+}
+
+.tab__panel-list li:hover {
+  transform: translateX(5px);
 }
 
 .tab__panel-list li::before {
-  content: "▹";
+  content: "▸";
   position: absolute;
   left: 0;
+  top: 2px;
+  color: var(--first-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.tab__panel-list li:hover::before {
+  transform: translateX(3px);
 }
 
 .button {
   display: inline-block;
   width: 100%;
-  padding: 1rem 2rem;
-  background: none;
+  padding: 1.25rem 1.5rem;
+  background: transparent;
   cursor: pointer;
   font-family: inherit;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-bold);
   color: var(--title-color);
   text-align: left;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.tab:first-child .button {
-  border-top-left-radius: var(--border-radius);
-}
-
-.tab:last-child .button {
-  border-bottom-left-radius: var(--border-radius);
+.button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: var(--first-color);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
 }
 
 .button:focus,
 .button:hover {
   outline: 0;
-  color: var(--first-color);
+  background: rgba(0, 0, 0, 0.03);
+  transform: translateX(5px);
+}
+
+[data-theme="dark"] .button:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.button:hover::before {
+  transform: scaleY(1);
 }
 
 .tab.is-active .button {
   background-color: var(--container-color);
-  border-top-left-radius: var(--border-radius);
-  border-bottom-left-radius: var(--border-radius);
+  border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   color: var(--first-color);
+  border-left: 3px solid var(--first-color);
+}
+
+.tab.is-active .button::before {
+  transform: scaleY(1);
 }
 
 .tab__panel:first-of-type.is-active,
 .tab__panel:last-child.is-active {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
 }
 
 @media screen and (max-width: 768px) {
   .resume__container {
-    max-width: 350px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 1rem;
   }
 
   .tabs {
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
   .tab__list {
-    width: 100vw;
-    margin-bottom: 1.25rem;
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 0.75rem;
+    padding-bottom: 0.5rem;
+    scrollbar-width: thin;
+  }
+
+  .tab__list::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .tab__list::-webkit-scrollbar-thumb {
+    background: var(--first-color);
+    border-radius: 4px;
+  }
+
+  .tab {
+    min-width: fit-content;
+  }
+
+  .button {
+    padding: 0.875rem 1.25rem;
+    white-space: nowrap;
+  }
+
+  .tab__panel {
+    padding: 1.5rem;
+  }
+
+  .tab__panel-title {
+    font-size: 1.35rem;
+  }
+
+  .tab__panel-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .tab__panel-list {
+    gap: 1rem;
+  }
+
+  .tab__panel-list li {
+    font-size: 0.9rem;
+    padding-left: 24px;
   }
 
   .tab__panel:first-of-type.is-active,
@@ -100,21 +207,133 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .tab__panel {
+    padding: 1.25rem;
+  }
+
+  .tab__panel-title {
+    font-size: 1.2rem;
+  }
+
+  .tab__panel-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .tab__panel-list li {
+    font-size: 0.85rem;
+    padding-left: 22px;
+  }
+}
+
 .tab__panel-title {
-  font-size: var(--h3-font-size);
+  font-size: 1.75rem;
+  font-weight: 700;
   margin-bottom: 1rem;
   color: var(--title-color);
+  line-height: 1.3;
 }
 
 [data-theme="dark"] .tab__panel-title {
   color: #fff;
 }
 
-.tab__panel-subtitle {
-  font-size: var(--normal-font-size);
-  margin-bottom: 1rem;
+.tab__panel-meta {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
-[data-theme="dark"] .tab__panel-subtitle {
-  color: #f8f9fa;
+.tab__panel-company,
+.tab__panel-date {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--first-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.meta-icon {
+  font-size: 1rem;
+}
+
+[data-theme="dark"] .tab__panel-company,
+[data-theme="dark"] .tab__panel-date {
+  color: var(--first-color);
+}
+
+.tab__panel-subtitle::before {
+  display: none;
+}
+
+.tab__panel-subtitle {
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  color: var(--first-color);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tab__panel-link {
+  color: var(--first-color);
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.tab__panel-link:hover {
+  color: var(--first-color-alt);
+  text-decoration: underline;
+}
+
+.tab__panel-link::after {
+  content: " ↗";
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+.tab__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.tab__company {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-bold);
+  color: var(--title-color);
+  transition: color 0.3s ease;
+}
+
+.tab__role {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-color);
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+
+.button:hover .tab__company {
+  color: var(--first-color);
+}
+
+.button:hover .tab__role {
+  opacity: 1;
+  color: var(--first-color);
+}
+
+.tab.is-active .tab__company {
+  color: var(--first-color);
+}
+
+.tab.is-active .tab__role {
+  opacity: 1;
+  color: var(--first-color);
 }
