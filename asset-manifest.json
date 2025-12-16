@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/ziw.github.io/static/css/main.7020ebef.css",
+    "main.js": "/ziw.github.io/static/js/main.a381a974.js",
+    "static/media/blog-1.png": "/ziw.github.io/static/media/blog-1.84960638c71e29945331.png",
+    "static/media/avatar-1.png": "/ziw.github.io/static/media/avatar-1.4e2d8dbbc15586fa1ec6.png",
+    "static/media/blog-2.png": "/ziw.github.io/static/media/blog-2.d47840570b0294e694ae.png",
+    "static/media/travel.png": "/ziw.github.io/static/media/travel.3f1e703c327327f3a246.png",
+    "static/media/native-jobs.png": "/ziw.github.io/static/media/native-jobs.aefeaca3698579f1e739.png",
+    "static/media/avatar-11.jpg": "/ziw.github.io/static/media/avatar-11.ab82c1afadfa2b7976a8.jpg",
+    "static/media/resume.pdf": "/ziw.github.io/static/media/resume.09dd446cf118ee084b0b.pdf",
+    "static/media/blog-1.svg": "/ziw.github.io/static/media/blog-1.7f5fb5b0228f104a981e9809017a1cb2.svg",
+    "static/media/cryptoverse.png": "/ziw.github.io/static/media/cryptoverse.9082016cd20b7f1e0ae0.png",
+    "static/media/avatar-2.png": "/ziw.github.io/static/media/avatar-2.488ade90abbeb66b172a.png",
+    "static/media/service-4.png": "/ziw.github.io/static/media/service-4.9b2ca008fd87f5a65528.png",
+    "static/media/avatar-3.svg": "/ziw.github.io/static/media/avatar-3.5bf46e6d1530bd73b02b567041e76e4d.svg",
+    "static/media/avatar-4.svg": "/ziw.github.io/static/media/avatar-4.1859fab5f65d2a41fed620abbb0170e5.svg",
+    "static/media/service-3.svg": "/ziw.github.io/static/media/service-3.5ce3e21e961c980ca809977cf695357b.svg",
+    "static/media/service-2.svg": "/ziw.github.io/static/media/service-2.360040db94db03a3ca860042e67c4912.svg",
+    "static/media/service-1.svg": "/ziw.github.io/static/media/service-1.e6772bd53c577af49129f09d020b488f.svg",
+    "static/media/dots-bg-dark.svg": "/ziw.github.io/static/media/dots-bg-dark.3a79e4a2778386f14af1.svg",
+    "static/media/dots-bg.svg": "/ziw.github.io/static/media/dots-bg.aa8289c51cd678b8cd47.svg",
+    "index.html": "/ziw.github.io/index.html",
+    "main.7020ebef.css.map": "/ziw.github.io/static/css/main.7020ebef.css.map",
+    "main.a381a974.js.map": "/ziw.github.io/static/js/main.a381a974.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7020ebef.css",
+    "static/js/main.a381a974.js"
+  ]
+}
