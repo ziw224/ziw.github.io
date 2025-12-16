@@ -1,33 +1,25 @@
 import React from 'react';
-import { FaGithub, FaFacebookF, FaLinkedinIn, FaTwitter, FaDev } from 'react-icons/fa';
-import { SiHashnode } from 'react-icons/si'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { SiGooglescholar } from "react-icons/si";
 
 const HeaderSocials = () => {
     return (
         <div className='home__socials'>
-            <a href='https://www.github.com/GregSithole' className='home__social-link' target='_blank' rel='noreferrer'>
+            <a href='https://github.com/ziw224' className='home__social-link' target='_blank' rel='noreferrer'>
                 <FaGithub />
             </a>
 
-            <a href='https://hashnode.com/@gregsithole' className='home__social-link' target='_blank' rel='noreferrer'>
-                <SiHashnode />
-            </a>
-
-            <a href='https://dev.to/gregsithole' className='home__social-link' target='_blank' rel='noreferrer'>
-                <FaDev />
-            </a>
-
-            <a href='https://www.linkedin.com/in/greg-sithole-b6350558/' className='home__social-link' target='_blank' rel='noreferrer'>
+            <a href='https://www.linkedin.com/in/zihan-wang02/' className='home__social-link' target='_blank' rel='noreferrer'>
                 <FaLinkedinIn />
             </a>
 
-            <a href='https://wwww.facebook.com/Greg.Sithole' className='home__social-link' target='_blank' rel='noreferrer'>
-                <FaFacebookF />
+            <a href='https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AElLoL1gCdE3Dt77VpXnDXxNKl1DmimJVtE4pmUKNutdWZB4Wqi_hQ-oHJa82iZwB1nDmAkRHgV4dsKefrIiRQ&user=pNzjDE4AAAAJ' className='home__social-link' target='_blank' rel='noreferrer'>
+                <SiGooglescholar />
             </a>
 
-            <a href='https://www.twitter.com/GregSithole' className='home__social-link' target='__blank' rel='noreferrer'>
+            {/* <a href='https://www.twitter.com/GregSithole' className='home__social-link' target='__blank' rel='noreferrer'>
                 <FaTwitter />
-            </a>
+            </a> */}
         </div>
     );
 };

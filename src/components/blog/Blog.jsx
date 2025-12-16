@@ -1,7 +1,7 @@
 import React from 'react';
 import './Blog.css';
 
-import Image1 from '../../assets/blog-1.svg';
+import Image1 from '../../assets/blog-1.png';
 
 const Blog = () => {
     return (
@@ -11,15 +11,16 @@ const Blog = () => {
             <div className="blog__container grid">
                 <div className="blog__card">
                     <div className="blog__thumb">
-                        <a href="#"><span className="blog__category">Example</span></a>
-                        <a href="#"><img src={Image1} alt="" className='blog__img' /></a>
-                    </div>
+                        <a href="#"><span className="blog__category">Oracle Blockchain Blog</span></a>
+                        <a href="https://blogs.oracle.com/blockchain/extending-cbdc-scalability-and-resilience-with-oracle-database-blockchain-tables" target="_blank" rel="noopener noreferrer">
+                            <img src={Image1} alt="" className='blog__img' />
+                        </a>                    </div>
                     <div className="blog__details">
-                        <h3 className="blog__title">Example Blog</h3>
+                        <h3 className="blog__title">Extending CBDC Scalability and Resilience with Oracle Database Blockchain Tables</h3>
                         <div className="blog__meta">
-                            <span>09 February, 2022</span>
+                            <span>January 29, 2024</span>
                             <span className="blog__dot">.</span>
-                            <span>Greg</span>
+                            <span>Zihan Wang</span>
                         </div>
                     </div>
                 </div>

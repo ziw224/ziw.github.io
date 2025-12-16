@@ -31,6 +31,29 @@
   text-align: justify;
 }
 
+.about__description a {
+  color: var(--first-color);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.about__description a:hover {
+  color: var(--title-color);
+}
+
+/* For dark mode - multiple selectors to ensure it works */
+body.dark-theme .about__description a,
+.dark-theme .about__description a,
+[data-theme="dark"] .about__description a {
+  color: #66b3ff !important;
+}
+
+body.dark-theme .about__description a:hover,
+.dark-theme .about__description a:hover,
+[data-theme="dark"] .about__description a:hover {
+  color: #99ccff !important;
+}
+
 .about__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -108,8 +131,9 @@
 }
 
 .about__icon {
-  font-size: var(--h1-font-size);
-  color: #dedeea;
+  font-size: 2rem;
+  min-width: 2rem;
+  flex-shrink: 0;
 }
 
 .about__title {

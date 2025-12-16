@@ -5,10 +5,10 @@
   /*=============== Colors ===============*/
   --first-color: hsl(353, 100%, 65%);
   --title-color: hsl(244, 100%, 26%);
-  --text-color: hsl(244, 16%, 43%);
-  --body-color: hsl(258, 60%, 98%);
-  --container-color: #fff;
-  --border-color: rgba(0, 0, 0, 0.05);
+  --text-color: hsl(243, 15%, 29%);  /* Darker text */
+  --body-color: hsl(240, 15%, 90%);  /* Much darker background - was 96% */
+  --container-color: hsl(0, 0%, 93%);  /* Darker containers - was 97% */
+  --border-color: rgba(0, 0, 0, 0.12);  /* More visible borders */
 
   /*=============== Font and Typohraphy ===============*/
   --body-font: "Noto Sans", san-serif;

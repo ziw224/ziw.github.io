@@ -22,16 +22,15 @@ const Home = () => {
                         <span className="arrow-label__text">Me and my cat Simba</span>
                         <span className="arrow-label__arrow">↷</span>
                     </div> */}
-                </div>
-                
+                </div>  
                 <h1 className="home__name">Zihan (Bella) Wang</h1>
                 <span className="home__education">I'm a Full Stack Software Engineer</span>
+
+                <HeaderSocials />
 
                 <div className="job-status">
                     <span className="job-status__badge">🎓 Graduating May 2026 • Seeking Full-time Opportunities 🚀</span>
                 </div>
-
-                <HeaderSocials />
 
                 <div className="home__buttons">
                     <a href="#contact" className="btn">Contact Me</a>

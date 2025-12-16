@@ -23,9 +23,10 @@ const About = () => {
                 <div className="about__data grid">
                     <div className="about__info">
                         <p className="about__description">
-                            Hello! I'm Zihan (Bella), and I'm currently pursuing my Master of Computer Science at Brown University, specializing in AI and Machine Learning.<br /><br />
-                            Fast-forward to today, I am deeply involved in both industry innovation and academic research. I currently work as a Founding AI Engineer at EcoForge building intelligent agent systems, while also researching Video LLMs at the LUNAR Lab. My focus these days is on architecting production-grade AI platforms.<br /><br />
-                            Here are a few technologies I‘ve been working with recently:
+                        Hi! I'm Zihan (Bella) Wang, a Master's student in Computer Science at Brown University specializing in AI and Machine Learning.<br /><br />
+                            I work at the intersection of research and real-world impact—currently researching LLM agents under Professor Randall and multimodal reasoning in Video LLMs under Professor Ellie Pavlick at Brown's LUNAR Lab, with recent work "<a href="https://arxiv.org/abs/2511.12868" target="_blank" rel="noopener noreferrer" >Video Finetuning Improves Reasoning Between Frames</a>" accepted to NeurIPS 2025 CogInterp.<br /><br />
+                            As a Founding AI Engineer at EcoForge, I architect intelligent agent systems for industrial manufacturing that helped secure ¥2M in seed funding and trials with China's largest cement manufacturer.<br /><br />
+                            Here are a few technologies I've been working with recently:
                         </p>
                         <ul className="about__list">
                             <li>Python (Expert)</li>
