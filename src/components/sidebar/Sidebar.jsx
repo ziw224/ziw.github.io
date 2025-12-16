@@ -89,12 +89,12 @@ const Sidebar = (props) => {
                                     <RiBriefcase2Line /> Experiences
                                 </a>
                             </li>
-
+{/* 
                             <li className="nav__item">
                                 <a href="#portfolio" className="nav__link">
                                     <RiStackLine /> Projects
                                 </a>
-                            </li>
+                            </li> */}
 
                             <li className="nav__item">
                                 <a href="#blog" className="nav__link">

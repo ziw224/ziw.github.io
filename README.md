@@ -1,28 +1,41 @@
 <h1 align="center">
   <br>
-  <a href="http://gregsithole.com">
-  <img src="./src/assets/light-logo.svg" alt="GregSithole" width="200"></a>
+  <a href="https://ziw224.github.io/ziw.github.io/">
+  <img src="./src/assets/light-logo.svg" alt="Zihan Wang" width="200"></a>
   <br>
   Zihan Wang's Personal Website
   <br>
 </h1>
 
-<h4 align="center">A simple personal website about <a href="http://gregsithole.com" target="_blank">Zihan Wang</a>.</h4>
+<h4 align="center">A simple personal website about <a href="https://ziw224.github.io/ziw.github.io/" target="_blank">Zihan Wang</a>.</h4>
 
 <br>
 
-![screenshot](https://github.com/GregSithole/gregsithole-react-portfolio/raw/master/src/assets/screenshot.png)
+![screenshot](https://github.com/ziw224/ziw.github.io/raw/master/src/assets/screenshot.png)
+
+## Tech Stack
+
+This portfolio is built with:
+
+- **React** ^18.2.0 - JavaScript library for building user interfaces
+- **Framer Motion** ^6.5.1 - Animation library for React
+- **React Icons** ^4.12.0 - Popular icon library
+- **Swiper** ^8.3.1 - Modern mobile touch slider
+- **EmailJS** ^3.6.2 - Send emails directly from JavaScript
+- **React Toastify** ^9.0.7 - Notification library
+- **Axios** ^0.27.2 - HTTP client
+- **Create React App** 5.0.1 - React development environment
 
 ## How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/). From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) with [Yarn](https://yarnpkg.com/). From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/GregSithole/gregsithole-react-portfolio
+$ git clone https://github.com/ziw224/ziw.github.io
 
 # Go into the repository
-$ cd gregsithole-react-portfolio
+$ cd ziw.github.io
 
 # Install dependencies
 $ yarn install
@@ -31,30 +44,43 @@ $ yarn install
 $ yarn start
 ```
 
-<!-- ## Credits
+## Deployment
 
-This website uses the following open source packages:
+This project is deployed using GitHub Pages. To deploy your own version:
 
-- [Node.js](https://nodejs.org/)
+```bash
+# Build and deploy to GitHub Pages
+$ yarn deploy
+```
 
-## Related
+The `yarn deploy` command will:
+1. Build the production version of the app
+2. Push the build files to the `gh-pages` branch
+3. Deploy automatically to GitHub Pages
 
-[markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify
+**Live Site:** [https://ziw224.github.io/ziw.github.io/](https://ziw224.github.io/ziw.github.io/)
 
-## Support -->
+### First-time Deployment Setup
 
-<!-- <a href="https://www.buymeacoffee.com/5Zn8Xh3l9" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a> -->
+If deploying for the first time:
 
-<!-- <p>Or</p>
+1. Install gh-pages: `yarn add -D gh-pages`
+2. Ensure `package.json` has these configurations:
+   ```json
+   "homepage": "https://ziw224.github.io/ziw.github.io"
+   ```
+   ```json
+   "scripts": {
+     "predeploy": "yarn build",
+     "deploy": "gh-pages -d build"
+   }
+   ```
+3. Run `yarn deploy`
+4. Go to your GitHub repository Settings → Pages
+5. Set Source to `gh-pages` branch and `/ (root)` folder
+6. Save and wait a few minutes for deployment
 
-<a href="https://www.patreon.com/amitmerchant">
-	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a> -->
-
-<!-- ## You may also like...
-
-- [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
-- [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
+---
 
 ## License
 
@@ -62,6 +88,4 @@ MIT
 
 ---
 
-> [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
-> GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
-> Twitter [@amit_merchant](https://twitter.com/amit_merchant) -->
+Made with ❤️ by [Zihan Wang](https://github.com/ziw224)
