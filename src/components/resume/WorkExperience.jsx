@@ -7,9 +7,9 @@ const WorkExperience = [
         yearsActive: "December 2024 - Present",
         information: [
             "Architected full-stack AI-powered cement production platform serving enterprise manufacturing clients, securing ¥2M seed funding and trials with China's largest cement manufacturer",
-            "Built production-grade AI agent using LangChain and GPT-4o, orchestrating multi-tool workflows for RAG-based Q&A system and intelligent parameter recommendations with <2s query latency",
-            "Engineered high-performance backend with FastAPI, Redis, and WebSockets for real-time data streaming; developed responsive Next.js/TypeScript frontend visualizing 100+ daily production KPIs",
-            "Established robust CI/CD pipelines with automated testing for stochastic agentic tool-calling; containerized application with Docker and orchestrated deployments across three environments (test, production, and on-site factory servers), ensuring 24/7 system availability and reliable model versioning",
+            "Built a high-performance full-stack application using Next.js (TypeScript) and FastAPI (Python), implementing a responsive UI library and WebSocket-based RESTful APIs to support 24/7 operations and real-time streaming of hundreds of daily metrics.",
+            "Designed core data infrastructure and orchestration systems using MySQL, ensuring sub-millisecond query performance and reliable continuous ingestion between frontend clients, ML models, and third-party services via heartbeat monitoring.",
+            "Established robust CI/CD pipelines with specialized automated testing for stochastic model outputs and complex API integrations, ensuring reliable model versioning, rollback capabilities, and system availability.",
         ],
     },
     {

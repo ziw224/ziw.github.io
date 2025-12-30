@@ -25,7 +25,7 @@ const About = () => {
                         <p className="about__description">
                         Hi! I'm Zihan (Bella) Wang, a Master's student in Computer Science at Brown University specializing in AI and Machine Learning.<br /><br />
                             I work at the intersection of research and real-world impact—currently researching LLM agents under Professor Randall and multimodal reasoning in Video LLMs under Professor Ellie Pavlick at Brown's LUNAR Lab, with recent work "<a href="https://arxiv.org/abs/2511.12868" target="_blank" rel="noopener noreferrer" >Video Finetuning Improves Reasoning Between Frames</a>" accepted to NeurIPS 2025 CogInterp.<br /><br />
-                            As a Founding AI Engineer at EcoForge, I architect intelligent agent systems for industrial manufacturing that helped secure ¥2M in seed funding and trials with China's largest cement manufacturer.<br /><br />
+                            As the Founding AI Engineer at EcoForge, I architect scalable, full-stack intelligent agent systems designed to automate complex industrial workflows. My work focuses on building real-time data orchestration engines that drive measurable efficiency—a platform that has already secured ¥2M in seed funding and is currently deployed in pilots with China's largest cement manufacturer.<br /><br />
                             Here are a few technologies I've been working with recently:
                         </p>
                         <ul className="about__list">
